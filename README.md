@@ -1,4 +1,4 @@
-Projeto de Extração e análise fundamentalista 
+# Projeto de Extração e análise fundamentalista 
 Este projeto tem como objetivo processar dados financeiros de empresas, organizando-os em tabelas que podem ser usadas para análises. O fluxo do projeto envolve a extração de dados a partir de uma planilha de entrada, a transformação dos dados e a organização final dos dados em diferentes formatos.
 
 Estrutura de Pastas
