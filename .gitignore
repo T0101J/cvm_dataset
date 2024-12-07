@@ -1,1 +1,13 @@
+# Ambiente virtual
 cvm/
+
+# Arquivos temporários do Python
+__pycache__/
+*.pyc
+
+# Arquivos de logs
+*.log
+
+# Arquivos específicos do sistema operacional (por exemplo, MacOS, Windows)
+.DS_Store
+Thumbs.db
