@@ -19,19 +19,17 @@ DEMOSTRATIVOS = ['DFC_MI','BPA','DRE','BPP']
 # BPP - Demonstração de Patrimonial Ativo
 # DRE - Demonstração de Resultado
 
-
-
 ticker = pd.read_excel('./input/TICKERS.xlsx')
 tickers = ticker['Tickers']
 cnpjs = list(ticker['cnpj'])
 
 # # Carregando dados
-# get_data = load()
-
-# get_data.load_data(FONTE_DADOS, cnpjs, tickers,DEMOSTRATIVOS)
-
+get_data = load()
+get_data.load_data(FONTE_DADOS, cnpjs, tickers,DEMOSTRATIVOS)
+# Formata as tabelas
 make_table = Table(tickers,DEMOSTRATIVOS)
 
-# Gerando tabelas
+# Gerando indicadores
 
-print("Processo concluído. Relatório gerado e gráficos salvos.")
+# Gerando gráfico
+print("Processo concluído.")
