@@ -33,6 +33,21 @@ Os scripts do projeto são responsáveis por processar os dados da planilha de e
   ```bash
   pip install -r requirements.txt
 
+### 3. Acessando os Resultados
+
+Após o processamento, você encontrará os resultados nas pastas dentro da pasta `output/`:
+
+- **raw/**: Contém os dados crus extraídos, sem nenhuma transformação.
+- **bronze/**: Contém os dados organizados por empresa, com tabelas transformadas e ajustadas para análise.
+
+As pastas dentro de `output/` são estruturadas da seguinte maneira:
+
+- **raw/**: Dados extraídos diretamente sem alterações.
+- **bronze/**: Tabelas organizadas, com os dados ajustados para cada empresa.
+
+Você pode acessar essas pastas para visualizar os dados processados em seus respectivos formatos.
+
+
 ## Como Usar
 
 ### 1. Preparação dos Dados
@@ -48,20 +63,6 @@ Os scripts do projeto são responsáveis por processar os dados da planilha de e
    ```bash
    python main.py
 
-
-### 3. Acessando os Resultados
-
-Após o processamento, você encontrará os resultados nas pastas dentro da pasta `output/`:
-
-- **raw/**: Contém os dados crus extraídos, sem nenhuma transformação.
-- **bronze/**: Contém os dados organizados por empresa, com tabelas transformadas e ajustadas para análise.
-
-As pastas dentro de `output/` são estruturadas da seguinte maneira:
-
-- **raw/**: Dados extraídos diretamente sem alterações.
-- **bronze/**: Tabelas organizadas, com os dados ajustados para cada empresa.
-
-Você pode acessar essas pastas para visualizar os dados processados em seus respectivos formatos.
 
 
 
