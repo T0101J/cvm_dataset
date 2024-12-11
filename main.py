@@ -12,7 +12,7 @@ ARQUIVO_RELATORIO = "./output/indicadores.xlsx"
 ANO_REFERENCIA = 2024
 FONTE_DADOS = f"http://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/ITR/DADOS/itr_cia_aberta_{ANO_REFERENCIA}.zip"
 FONTE_BALANCO = "fonte_balanco"
-DEMOSTRATIVOS = ['DFC_MI','BPA','DRE','BPP']
+DEMOSTRATIVOS = ['DFC_MI','BPA','BPP','DRE']
 # DFC_MD - Demonstração de Fluxo de Caixa - Método Direto
 # DFC_MI - Demonstração de Fluxo de Caixa - Método Indireto
 # BPA - Demonstração de Patrimonial Ativo
@@ -24,8 +24,8 @@ tickers = ticker['Tickers']
 cnpjs = list(ticker['cnpj'])
 
 # # Carregando dados
-get_data = load()
-get_data.load_data(FONTE_DADOS, cnpjs, tickers,DEMOSTRATIVOS)
+# get_data = load()
+# get_data.load_data(FONTE_DADOS, cnpjs, tickers,DEMOSTRATIVOS)
 # Formata as tabelas
 make_table = Table(tickers,DEMOSTRATIVOS)
 
